@@ -9,8 +9,8 @@ out_filetype = '.flac'
 
 def config():
     global debug, ffmpeg_command, ffmpeg_option, src_filetype, out_filetype
-
-    config_file = open('config.json','r')
+    exec_path = os.path.split(__file__)[0]
+    config_file = open(exec_path + os.sep + 'config.json','r')
     config_data = json.load(config_file)
 
     debug = config_data['exec_options']['debug_option']
@@ -23,7 +23,7 @@ def config():
     ffmpeg_comp_option = ' '.join(['-compression_level', comp_level])
     ffmpeg_resample_option = ' '.join(['-sample_fmt', out_bit_depth, '-af', out_resampler, '-ar', out_sampling])
     ffmpeg_option = ' '.join(['-c:v copy', ffmpeg_comp_option, ffmpeg_resample_option])
-    src_filetype = config_data['source_type']['src_type']
+    src_filetype = config_data['input_options']['src_type']
     return
 
 def resample():
