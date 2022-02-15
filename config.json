@@ -1,0 +1,17 @@
+{
+    "exec_options":{
+        "debug_option":false,
+        "ffmpeg_path":"C:\\Program Files\\ffmpeg\\ffmpeg.exe"
+    },
+    "source_type":{
+        "src_type":".flac"
+    },
+    "output_options":{
+        "out_type":".flac",
+        "resampling":true,
+        "bit_depth":"s32",
+        "sampling":"96000",
+        "resampler":"soxr",
+        "comp_level":"12"
+    }
+}
