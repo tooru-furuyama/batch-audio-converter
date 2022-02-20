@@ -1,7 +1,7 @@
 {
     "exec_options":{
         "debug_option":false,
-        "ffmpeg_path":"E:\\System\\opt\\codec64\\ffmpeg.exe"
+        "ffmpeg_path":"C:\\Program Files\\ffmpeg\\ffmpeg.exe"
     },
     "input_options":{
         "src_type":"flac"
