@@ -11,8 +11,8 @@ Convert music files in the same directory using FFmpeg.
 - Parameters are configured within config.json file
 
 ## Usage:
-> python .\resampling.py
+> python .\audio-converter.py
 
 Or specify pre-configured JSON file
 
-> python .\resampling.py -p preset_mp3.json
+> python .\audio-converter.py -p preset_mp3.json
