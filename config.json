@@ -1,17 +1,29 @@
 {
     "exec_options":{
         "debug_option":false,
-        "ffmpeg_path":"C:\\Program Files\\ffmpeg\\ffmpeg.exe"
+        "ffmpeg_path":"E:\\System\\opt\\codec64\\ffmpeg.exe"
     },
     "input_options":{
-        "src_type":".flac"
+        "src_type":"flac"
     },
     "output_options":{
-        "out_type":".flac",
-        "resampling":true,
-        "bit_depth":"s32",
-        "sampling":"96000",
-        "resampler":"soxr",
-        "comp_level":"12"
+        "out_type":"flac",
+        "flac_options":{
+            "comp_level":"12",
+            "resampling":true,
+            "resampling_options":{
+                "bit_depth":"s32",
+                "sampling":"96000",
+                "resampler":"soxr"
+            }
+        },
+        "mp3_options":{
+            "codec":"libmp3lame",
+            "option_string":"-b:a 320k -compression_level 0 -joint_stereo 1 -cutoff 20000"
+        },
+        "aac_options":{
+            "codec":"libfdk_aac",
+            "option_string":"-b:a 384k -cutoff 20000"
+        }
     }
 }
