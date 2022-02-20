@@ -2,7 +2,7 @@
 Convert music files in the same directory using FFmpeg.
 
 ## Use case scenarios
-- Convert multiple wave files (e.g. ripped album from Audio CD) to FLAC or APE Lossless audio files
+- Convert multiple wave files (e.g. ripped album from Audio CD) to FLAC, MP3 or AAC audio files
 - Convert High Resolution (e.g. 24-bit / 192 kHz) audio files to lower resolution audio files (e.g. 24-bit / 96 kHz)
 
 ## Pre-requisite
