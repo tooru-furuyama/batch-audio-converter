@@ -1,4 +1,4 @@
-# Audio batch converter
+# Batch Audio Converter
 Convert music files in the same directory using FFmpeg.
 
 ## Use case scenarios
