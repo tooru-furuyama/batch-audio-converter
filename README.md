@@ -1,5 +1,5 @@
 # Batch Audio Converter
-Convert music files in the same directory using FFmpeg.
+- Convert multiple music files in the same directory using FFmpeg.
 
 ## Use case scenarios
 - Convert multiple wave files (e.g. ripped album from Audio CD) to FLAC, MP3 or AAC audio files
@@ -7,12 +7,17 @@ Convert music files in the same directory using FFmpeg.
 
 ## Pre-requisite
 - Python 3 is installed on the host
-- Install FFmpeg somewhere on the host
+- FFmpeg is installed somewhere on the host
 - Parameters are configured within config.json file
 
 ## Usage:
 > python .\audio-converter.py
 
-Or specify pre-configured JSON file
-
+specify pre-configured JSON file
 > python .\audio-converter.py -p preset_mp3.json
+
+specify input file type (overwrite profile setting)
+> python .\audio-converter.py -i wav
+
+specify output file type (overwrite profile setting)
+> python .\audio-converter.py -o mp3
