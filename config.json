@@ -1,7 +1,7 @@
 {
     "exec_options":{
-        "debug_option":true,
-        "max_thread":4,
+        "debug_option":false,
+        "max_process":4,
         "ffmpeg_path":"C:\\Program Files\\ffmpeg\\ffmpeg.exe"
     },
     "input_options":{
