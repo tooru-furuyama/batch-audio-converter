@@ -1,7 +1,8 @@
 {
     "exec_options":{
-        "debug_option":false,
-        "ffmpeg_path":"C:\\Program Files\\ffmpeg\\ffmpeg.exe"
+        "debug_option":true,
+        "max_thread":4,
+        "ffmpeg_path":"E:\\System\\opt\\codec64\\ffmpeg.exe"
     },
     "input_options":{
         "src_type":"flac"
@@ -13,7 +14,7 @@
             "resampling":true,
             "resampling_options":{
                 "bit_depth":"s32",
-                "sampling":"96000",
+                "sampling":"48000",
                 "resampler":"soxr"
             }
         },
