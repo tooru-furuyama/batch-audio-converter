@@ -7,10 +7,10 @@
 
 ## Pre-requisite
 - Python 3 is installed on the host
-- FFmpeg is installed somewhere on the host
+- FFmpeg is installed somewhere on the host (FFmpeg path should be configured within the config.json file)
 - Parameters are configured within config.json file
 
-## Usage:
+## Usage
 > python .\audio-converter.py
 
 specify pre-configured JSON file
@@ -21,3 +21,17 @@ specify input file type (overwrite profile setting)
 
 specify output file type (overwrite profile setting)
 > python .\audio-converter.py -o mp3
+
+## Update History
+### 2022-02-27
+- Added Multiprocessing support
+- Code improvements - Applied "private" attribute for internal variables
+- Command line improvements - Added support to specify input/output filetypes through command line
+
+### 2022-02-20
+- Code improvements - Applied Class
+- Added MP3 and AAC support
+- Command line improvements - Added support for non-default config file through command line
+
+### 2022-02-15
+- Initial Commit
