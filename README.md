@@ -2,8 +2,10 @@
 - Convert multiple music files in the same directory using FFmpeg.
 
 ## Use case scenarios
-- Convert multiple wave files (e.g. ripped album from Audio CD) to FLAC, MP3 or AAC audio files
-- Convert High Resolution (e.g. 24-bit / 192 kHz) audio files to lower resolution audio files (e.g. 24-bit / 96 kHz)
+- Multiple audio files are stored in a folder (e.g. album)
+- Convert multiple audio files
+  - Convert multiple wave files (e.g. ripped album from Audio CD) to FLAC, MP3 or AAC audio files
+  - Convert High Resolution audio files (e.g. 24-bit / 192 kHz) to lower resolution audio files (e.g. 24-bit / 48 kHz)
 
 ## Pre-requisite
 - Python 3 is installed on the host
@@ -25,13 +27,13 @@ specify output file type (overwrite profile setting)
 ## Update History
 ### 2022-02-27
 - Added Multiprocessing support
-- Code improvements - Applied "private" attribute for internal variables
-- Command line improvements - Added support to specify input/output filetypes through command line
+- Additional command line option - Added support to specify input/output filetypes through command line
+- Code improvements
 
 ### 2022-02-20
-- Code improvements - Applied Class
 - Added MP3 and AAC support
-- Command line improvements - Added support for non-default config file through command line
+- Additional command line option - Added support for non-default config file through command line
+- Code improvements
 
 ### 2022-02-15
 - Initial Commit
